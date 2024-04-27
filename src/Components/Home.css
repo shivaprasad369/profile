@@ -1,0 +1,32 @@
+@keyframes morph{
+0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30%;
+}
+
+100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+}
+.hero-img {
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    background-image: url(/static/media/pfp_webp.f334283….webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    position: relative;
+    width: 15rem;
+    animation: 8s ease-in-out 0s infinite normal none running morph;
+    background-position: 50% center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(45, 46, 50);
+    border-image: initial;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: all 1s ease-in-out 0s;
+}
